@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | FedhEn Capital</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .contact-form {
+            background: var(--bg-white);
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 2px rgba(197, 168, 128, 0.2);
+        }
+
+        .contact-info-list {
+            list-style: none;
+        }
+
+        .contact-info-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+
+        .contact-info-list i {
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            margin-right: 16px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                <img src="https://images.squarespace-cdn.com/content/v1/6548c4b282ae2309516428d2/ec15d735-2336-4e97-8e93-943d2e5110cf/FedhEn-logo.png?format=1500w"
+                    alt="FedhEn Capital">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="expertise.html" class="nav-link">Notre Expertise</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section section-bg-dark" style="padding-top: 160px; padding-bottom: 80px;">
+        <div class="container">
+            <h1 class="section-title left-align" style="margin-bottom: 24px;">Nous Contacter</h1>
+            <p class="section-subtitle" style="margin: 0; max-width: 800px; color: rgba(255,255,255,0.8);">Un projet,
+                une question sur vos investissements ? Notre équipe d'experts est à votre disposition.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container grid-2">
+
+            <!-- Contact Info -->
+            <div class="animate-on-scroll">
+                <h2 style="font-size: 2rem; margin-bottom: 32px;">Contacts</h2>
+                <ul class="contact-info-list">
+                    <li>
+                        <i class="ph ph-map-pin"></i>
+                        <div>
+                            <h4 style="font-family: var(--font-body); margin-bottom: 4px;">Siège Social</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">Immeuble Indigo,<br>5e
+                                étage,<br>Douala, Cameroun</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph ph-phone"></i>
+                        <div>
+                            <h4 style="font-family: var(--font-body); margin-bottom: 4px;">Téléphone</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">+237 233 42 99 68</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div style="margin-top: 48px;">
+                    <h4 style="margin-bottom: 16px;">Horaire d'ouverture</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Lundi - Vendredi : 08h00 -
+                        17h30<br>Samedi - Dimanche : Fermé</p>
+                </div>
+
+                <div style="margin-top: 40px;">
+                    <h4 style="font-family: var(--font-body); margin-bottom: 16px;">Suivez-nous</h4>
+                    <div style="display: flex; gap: 16px;">
+                        <a href="https://www.linkedin.com/company/fedhen-capital" target="_blank"
+                            rel="noopener noreferrer" style="color: var(--primary-color); text-decoration: none;">
+                            <i class="ph ph-linkedin-logo" style="font-size: 1.8rem;"></i>
+                        </a>
+                        <a href="https://x.com/fedhencapital/" target="_blank" rel="noopener noreferrer"
+                            style="color: var(--primary-color); text-decoration: none;">
+                            <i class="ph ph-x-logo" style="font-size: 1.8rem;"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZLMgZ0n9Mt7yTv1BQsB52A" target="_blank"
+                            rel="noopener noreferrer" style="color: var(--primary-color); text-decoration: none;">
+                            <i class="ph ph-youtube-logo" style="font-size: 1.8rem;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form animate-on-scroll" style="transition-delay: 0.2s">
+                <h3 style="margin-bottom: 24px;">Envoyez-nous un message</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Nom complet</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Adresse Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Objet</label>
+                        <select id="subject" class="form-control" required
+                            style="appearance: none; background: white url('data:image/svg+xml;utf8,<svg xmlns=\&quot;http://www.w3.org/2000/svg\&quot; width=\&quot;24\&quot; height=\&quot;24\&quot; viewBox=\&quot;0 0 24 24\&quot; fill=\&quot;none\&quot; stroke=\&quot;%23333\&quot; stroke-width=\&quot;2\&quot; stroke-linecap=\&quot;round\&quot; stroke-linejoin=\&quot;round\&quot;><polyline points=\&quot;6 9 12 15 18 9\&quot;></polyline></svg>') no-repeat right 16px center;">
+                            <option value="">Sélectionner un motif...</option>
+                            <option value="banque">Banque d'Affaires</option>
+                            <option value="asset">Asset Management</option>
+                            <option value="bourse">Intermédiation Boursière</option>
+                            <option value="autre">Autre demande</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer la demande</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section section-bg-light" style="padding-top: 0; padding-bottom: 80px;">
+        <div class="container animate-on-scroll">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d703.5689688293136!2d9.700276480162659!3d4.02303450367347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10611370d4534125%3A0x385806b1abbd7dae!2sFedhEn%20Capital!5e0!3m2!1sen!2scm!4v1772418818693!5m2!1sen!2scm"
+                width="100%" height="450"
+                style="border:0; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,0.05);" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" style="display: block; margin-bottom: 24px;">
+                        <img src="https://images.squarespace-cdn.com/content/v1/6548c4b282ae2309516428d2/ec15d735-2336-4e97-8e93-943d2e5110cf/FedhEn-logo.png?format=1500w"
+                            alt="FedhEn Capital" style="height: 48px; object-fit: contain;">
+                    </a>
+                    <p style="max-width: 300px; margin-bottom: 24px;">La finance au service du développement de
+                        l'Afrique. Partenaire stratégique des investisseurs en zone CEMAC.</p>
+                    <div style="display: flex; gap: 16px;">
+                        <a href="https://www.linkedin.com/company/fedhen-capital" target="_blank"
+                            rel="noopener noreferrer"
+                            style="color: #ffffff; text-decoration: none; opacity: 0.8; transition: opacity 0.3s;"
+                            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                            <i class="ph ph-linkedin-logo" style="font-size: 1.5rem;"></i>
+                        </a>
+                        <a href="https://x.com/fedhencapital/" target="_blank" rel="noopener noreferrer"
+                            style="color: #ffffff; text-decoration: none; opacity: 0.8; transition: opacity 0.3s;"
+                            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                            <i class="ph ph-x-logo" style="font-size: 1.5rem;"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZLMgZ0n9Mt7yTv1BQsB52A" target="_blank"
+                            rel="noopener noreferrer"
+                            style="color: #ffffff; text-decoration: none; opacity: 0.8; transition: opacity 0.3s;"
+                            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                            <i class="ph ph-youtube-logo" style="font-size: 1.5rem;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Notre Structure</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">À propos de nous</a></li>
+                        <li><a href="expertise.html">Notre Expertise</a></li>
+                        <li><a href="#">Nos activités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Insights & Marchés</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Financial Insight</a></li>
+                        <li><a href="#">Rapport de marché</a></li>
+                        <li><a href="#">Analyse du marché interbancaire</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Ressources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Guide de l'investisseur</a></li>
+                        <li><a href="#">Education Financière</a></li>
+                        <li><a href="INSTRUCTION-COSUMAF-N23-24-DU-18-JUILLET-2024-PORTANT-TARIFICATION-APPLICABLE-SUR-LE-MARCHE-FINANCIE.pdf"
+                                target="_blank">Tarification
+                                COSUMAF</a></li>
+                        <li><a href="Agrément+FEDHEN+CAPITAL.pdf" target="_blank">Agrément FedhEn Capital</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FedhEn Capital. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
