@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Insights | FedhEn Capital</title>
+    <title>Market Reports | FedhEn Capital</title>
     <link rel="icon" type="image/png" href="FedhEn-logo.png">
     <link rel="stylesheet" href="styles.css">
     <!-- Phosphor Icons for premium minimal icons -->
@@ -32,8 +32,8 @@
     <!-- Page Header -->
     <section class="section section-bg-dark" style="padding-top: 160px; padding-bottom: 80px;">
         <div class="container">
-            <h1 class="section-title left-align" style="margin-bottom: 24px;">Financial Insights</h1>
-            <p class="section-subtitle" style="margin: 0; max-width: 800px; color: rgba(255,255,255,0.8);">Découvrez l'ensemble de nos publications et analyses sur l'environnement financier et économique de la zone CEMAC.</p>
+            <h1 class="section-title left-align" style="margin-bottom: 24px;">Market Reports</h1>
+            <p class="section-subtitle" style="margin: 0; max-width: 800px; color: rgba(255,255,255,0.8);">Accédez à nos analyses approfondies et notes de recherche sur les marchés locaux et internationaux, segmentées par zone géographique et classe d'actifs.</p>
         </div>
     </section>
 
@@ -44,16 +44,17 @@
             <!-- Controls -->
             <div class="insights-controls">
                 <div class="filters">
-                    <select id="theme-filter" class="form-input">
-                        <option value="all">Toutes les thématiques</option>
-                        <option value="macroeconomie">Macroéconomie</option>
-                        <option value="marches-capitaux">Marchés de Capitaux</option>
-                        <option value="obligations">Obligations</option>
+                    <select id="zone-filter" class="form-input">
+                        <option value="all">Toutes les zones</option>
+                        <option value="cemac">CEMAC</option>
+                        <option value="afrique-centrale">Afrique Centrale</option>
+                        <option value="international">International</option>
                     </select>
-                    <select id="date-filter" class="form-input">
-                        <option value="all">Toutes les dates</option>
-                        <option value="2026-04">Avril 2026</option>
-                        <option value="2026-02">Février 2026</option>
+                    <select id="asset-filter" class="form-input">
+                        <option value="all">Toutes les classes d'actifs</option>
+                        <option value="actions">Actions</option>
+                        <option value="obligations">Obligations</option>
+                        <option value="monetaire">Monétaire</option>
                     </select>
                 </div>
                 <div class="view-toggles">
@@ -67,17 +68,17 @@
             </div>
 
             <!-- Bulletins -->
-            <div id="insights-container" class="grid-3 insights-grid">
+            <div id="market-reports-container" class="grid-3 insights-grid">
                 
                 <!-- Card 1 -->
-                <div class="value-card insight-card" data-theme="macroeconomie" data-date="2026-04">
+                <div class="value-card insight-card" data-zone="cemac" data-asset="actions">
                     <div class="insight-content">
-                        <span class="insight-theme">Macroéconomie</span>
-                        <h3 class="insight-title">FINANCIAL INSIGHT 24 Avril 2026</h3>
-                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 24 Avril 2026</p>
-                        <p class="insight-summary">Analyse approfondie de la conjoncture macroéconomique récente et de ses impacts sur les marchés financiers de la sous-région CEMAC.</p>
+                        <span class="insight-theme">CEMAC • Actions</span>
+                        <h3 class="insight-title">MARKET REPORT 27 Avril 2026</h3>
+                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 27 Avril 2026</p>
+                        <p class="insight-summary">Analyse de la performance des marchés boursiers de la zone CEMAC, valorisation des actions et perspectives pour les investisseurs régionaux.</p>
                         <div class="insight-actions">
-                            <a href="FINANCIAL INSIGHT_24042026.pdf" target="_blank" class="btn btn-primary btn-download">
+                            <a href="MARKET_REPORT_27042026.pdf" target="_blank" class="btn btn-primary btn-download">
                                 <i class="ph ph-download-simple"></i> Télécharger PDF
                             </a>
                         </div>
@@ -85,14 +86,14 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="value-card insight-card" data-theme="marches-capitaux" data-date="2026-04">
+                <div class="value-card insight-card" data-zone="afrique-centrale" data-asset="obligations">
                     <div class="insight-content">
-                        <span class="insight-theme">Marchés de Capitaux</span>
-                        <h3 class="insight-title">FINANCIAL INSIGHT 17 Avril 2026</h3>
-                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 17 Avril 2026</p>
-                        <p class="insight-summary">Évolution des marchés de capitaux, analyse des taux d'intérêt et dynamique de financement dans la zone.</p>
+                        <span class="insight-theme">Afrique Centrale • Obligations</span>
+                        <h3 class="insight-title">MARKET REPORT 20 Avril 2026</h3>
+                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 20 Avril 2026</p>
+                        <p class="insight-summary">Revue du marché de la dette souveraine en Afrique Centrale, évolution des rendements et impact des politiques monétaires.</p>
                         <div class="insight-actions">
-                            <a href="FINANCIAL INSIGHT_17042026.pdf" target="_blank" class="btn btn-primary btn-download">
+                            <a href="MARKET_REPORT_20042026.pdf" target="_blank" class="btn btn-primary btn-download">
                                 <i class="ph ph-download-simple"></i> Télécharger PDF
                             </a>
                         </div>
@@ -100,14 +101,14 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="value-card insight-card" data-theme="obligations" data-date="2026-04">
+                <div class="value-card insight-card" data-zone="international" data-asset="actions">
                     <div class="insight-content">
-                        <span class="insight-theme">Obligations</span>
-                        <h3 class="insight-title">FINANCIAL INSIGHT 10 Avril 2026</h3>
-                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 10 Avril 2026</p>
-                        <p class="insight-summary">Revue du marché obligataire, nouvelles émissions et tendances des rendements des titres publics et privés.</p>
+                        <span class="insight-theme">International • Actions</span>
+                        <h3 class="insight-title">MARKET REPORT 13 Avril 2026</h3>
+                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 13 Avril 2026</p>
+                        <p class="insight-summary">Dynamique des marchés internationaux et répercussions sur les flux de capitaux vers les marchés émergents et frontières.</p>
                         <div class="insight-actions">
-                            <a href="FINANCIAL INSIGHT_10042026.pdf" target="_blank" class="btn btn-primary btn-download">
+                            <a href="MARKET_REPORT_13042026.pdf" target="_blank" class="btn btn-primary btn-download">
                                 <i class="ph ph-download-simple"></i> Télécharger PDF
                             </a>
                         </div>
@@ -115,14 +116,14 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="value-card insight-card" data-theme="macroeconomie" data-date="2026-02">
+                <div class="value-card insight-card" data-zone="cemac" data-asset="monetaire">
                     <div class="insight-content">
-                        <span class="insight-theme">Macroéconomie</span>
-                        <h3 class="insight-title">FINANCIAL INSIGHT 06 Février 2026</h3>
-                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 06 Février 2026</p>
-                        <p class="insight-summary">Perspectives économiques pour le premier trimestre 2026, indicateurs clés et prévisions de croissance.</p>
+                        <span class="insight-theme">CEMAC • Monétaire</span>
+                        <h3 class="insight-title">MARKET REPORT 06 Avril 2026</h3>
+                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 06 Avril 2026</p>
+                        <p class="insight-summary">Analyse du marché monétaire et interbancaire de la CEMAC, liquidité bancaire et évolution des taux de référence.</p>
                         <div class="insight-actions">
-                            <a href="FINANCIAL INSIGHT_06022026.pdf" target="_blank" class="btn btn-primary btn-download">
+                            <a href="MARKET_REPORT_06042026.pdf" target="_blank" class="btn btn-primary btn-download">
                                 <i class="ph ph-download-simple"></i> Télécharger PDF
                             </a>
                         </div>

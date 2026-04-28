@@ -84,4 +84,50 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 4. Market Reports Page Logic
+    const zoneFilter = document.getElementById('zone-filter');
+    const assetFilter = document.getElementById('asset-filter');
+    const marketReportsContainer = document.getElementById('market-reports-container');
+
+    if (marketReportsContainer && zoneFilter && assetFilter) {
+        const filterMarketReports = () => {
+            const selectedZone = zoneFilter.value;
+            const selectedAsset = assetFilter.value;
+
+            insightCards.forEach(card => {
+                const cardZone = card.getAttribute('data-zone');
+                const cardAsset = card.getAttribute('data-asset');
+                
+                let zoneMatch = selectedZone === 'all' || cardZone === selectedZone;
+                let assetMatch = selectedAsset === 'all' || cardAsset === selectedAsset;
+
+                if (zoneMatch && assetMatch) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        };
+
+        zoneFilter.addEventListener('change', filterMarketReports);
+        assetFilter.addEventListener('change', filterMarketReports);
+
+        // View Toggling (reuses viewBtns logic, just applies to marketReportsContainer)
+        viewBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                viewBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const viewType = btn.getAttribute('data-view');
+                if (viewType === 'list') {
+                    marketReportsContainer.classList.add('list-view');
+                    marketReportsContainer.classList.remove('grid-3');
+                } else {
+                    marketReportsContainer.classList.remove('list-view');
+                    marketReportsContainer.classList.add('grid-3');
+                }
+            });
+        });
+    }
 });
