@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Insights | FedhEn Capital</title>
+    <link rel="icon" type="image/png" href="FedhEn-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Phosphor Icons for premium minimal icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                <img src="https://images.squarespace-cdn.com/content/v1/6548c4b282ae2309516428d2/ec15d735-2336-4e97-8e93-943d2e5110cf/FedhEn-logo.png?format=1500w"
+                    alt="FedhEn Capital">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="expertise.html" class="nav-link">Notre Expertise</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section section-bg-dark" style="padding-top: 160px; padding-bottom: 80px;">
+        <div class="container">
+            <h1 class="section-title left-align" style="margin-bottom: 24px;">Financial Insights</h1>
+            <p class="section-subtitle" style="margin: 0; max-width: 800px; color: rgba(255,255,255,0.8);">Découvrez l'ensemble de nos publications et analyses sur l'environnement financier et économique de la zone CEMAC.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            
+            <!-- Controls -->
+            <div class="insights-controls">
+                <div class="filters">
+                    <select id="theme-filter" class="form-input">
+                        <option value="all">Toutes les thématiques</option>
+                        <option value="macroeconomie">Macroéconomie</option>
+                        <option value="marches-capitaux">Marchés de Capitaux</option>
+                        <option value="obligations">Obligations</option>
+                    </select>
+                    <select id="date-filter" class="form-input">
+                        <option value="all">Toutes les dates</option>
+                        <option value="2026-04">Avril 2026</option>
+                        <option value="2026-02">Février 2026</option>
+                    </select>
+                </div>
+                <div class="view-toggles">
+                    <button class="view-btn active" data-view="grid" title="Vue Grille">
+                        <i class="ph ph-squares-four"></i>
+                    </button>
+                    <button class="view-btn" data-view="list" title="Vue Liste">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bulletins -->
+            <div id="insights-container" class="grid-3 insights-grid">
+                
+                <!-- Card 1 -->
+                <div class="value-card insight-card" data-theme="macroeconomie" data-date="2026-04">
+                    <div class="insight-content">
+                        <span class="insight-theme">Macroéconomie</span>
+                        <h3 class="insight-title">FINANCIAL INSIGHT 24 Avril 2026</h3>
+                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 24 Avril 2026</p>
+                        <p class="insight-summary">Analyse approfondie de la conjoncture macroéconomique récente et de ses impacts sur les marchés financiers de la sous-région CEMAC.</p>
+                        <div class="insight-actions">
+                            <a href="FINANCIAL INSIGHT_24042026.pdf" target="_blank" class="btn btn-primary btn-download">
+                                <i class="ph ph-download-simple"></i> Télécharger PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="value-card insight-card" data-theme="marches-capitaux" data-date="2026-04">
+                    <div class="insight-content">
+                        <span class="insight-theme">Marchés de Capitaux</span>
+                        <h3 class="insight-title">FINANCIAL INSIGHT 17 Avril 2026</h3>
+                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 17 Avril 2026</p>
+                        <p class="insight-summary">Évolution des marchés de capitaux, analyse des taux d'intérêt et dynamique de financement dans la zone.</p>
+                        <div class="insight-actions">
+                            <a href="FINANCIAL INSIGHT_17042026.pdf" target="_blank" class="btn btn-primary btn-download">
+                                <i class="ph ph-download-simple"></i> Télécharger PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="value-card insight-card" data-theme="obligations" data-date="2026-04">
+                    <div class="insight-content">
+                        <span class="insight-theme">Obligations</span>
+                        <h3 class="insight-title">FINANCIAL INSIGHT 10 Avril 2026</h3>
+                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 10 Avril 2026</p>
+                        <p class="insight-summary">Revue du marché obligataire, nouvelles émissions et tendances des rendements des titres publics et privés.</p>
+                        <div class="insight-actions">
+                            <a href="FINANCIAL INSIGHT_10042026.pdf" target="_blank" class="btn btn-primary btn-download">
+                                <i class="ph ph-download-simple"></i> Télécharger PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="value-card insight-card" data-theme="macroeconomie" data-date="2026-02">
+                    <div class="insight-content">
+                        <span class="insight-theme">Macroéconomie</span>
+                        <h3 class="insight-title">FINANCIAL INSIGHT 06 Février 2026</h3>
+                        <p class="insight-date"><i class="ph ph-calendar-blank"></i> 06 Février 2026</p>
+                        <p class="insight-summary">Perspectives économiques pour le premier trimestre 2026, indicateurs clés et prévisions de croissance.</p>
+                        <div class="insight-actions">
+                            <a href="FINANCIAL INSIGHT_06022026.pdf" target="_blank" class="btn btn-primary btn-download">
+                                <i class="ph ph-download-simple"></i> Télécharger PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <div class="newsletter-widget" style="background: var(--bg-white); border-radius: 8px; padding: 48px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 800px; margin: 0 auto;">
+                <div class="newsletter-content" style="margin-bottom: 24px;">
+                    <h2 style="color: var(--primary-color); margin-bottom: 16px;">Restez informé</h2>
+                    <p style="color: var(--text-secondary);">Inscrivez-vous pour recevoir automatiquement nos prochaines publications et analyses de marché.</p>
+                </div>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');" style="display: flex; gap: 16px; width: 100%; max-width: 500px;">
+                    <input type="email" class="form-input" placeholder="Votre adresse email" required style="flex-grow: 1;">
+                    <button type="submit" class="btn btn-primary" style="white-space: nowrap;">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" style="display: block; margin-bottom: 24px;">
+                        <img src="https://images.squarespace-cdn.com/content/v1/6548c4b282ae2309516428d2/ec15d735-2336-4e97-8e93-943d2e5110cf/FedhEn-logo.png?format=1500w"
+                            alt="FedhEn Capital" style="height: 48px; object-fit: contain;">
+                    </a>
+                    <p style="max-width: 300px; margin-bottom: 24px;">La finance au service du développement de
+                        l'Afrique. Partenaire stratégique des investisseurs en zone CEMAC.</p>
+                    <div style="display: flex; gap: 16px;">
+                        <a href="https://www.linkedin.com/company/fedhen-capital" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none; opacity: 0.8; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                            <i class="ph ph-linkedin-logo" style="font-size: 1.5rem;"></i>
+                        </a>
+                        <a href="https://x.com/fedhencapital/" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none; opacity: 0.8; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                            <i class="ph ph-x-logo" style="font-size: 1.5rem;"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZLMgZ0n9Mt7yTv1BQsB52A" target="_blank" rel="noopener noreferrer" style="color: #ffffff; text-decoration: none; opacity: 0.8; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                            <i class="ph ph-youtube-logo" style="font-size: 1.5rem;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Notre Structure</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">À propos de nous</a></li>
+                        <li><a href="expertise.html">Notre Expertise</a></li>
+                        <li><a href="#">Nos activités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Insights & Marchés</h4>
+                    <ul class="footer-links">
+                        <li><a href="financial-insights.html">Financial Insight</a></li>
+                        <li><a href="#">Rapport de marché</a></li>
+                        <li><a href="#">Analyse du marché interbancaire</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Ressources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Guide de l'investisseur</a></li>
+                        <li><a href="#">Education Financière</a></li>
+                        <li><a href="INSTRUCTION-COSUMAF-N23-24-DU-18-JUILLET-2024-PORTANT-TARIFICATION-APPLICABLE-SUR-LE-MARCHE-FINANCIE.pdf" target="_blank">Tarification COSUMAF</a></li>
+                        <li><a href="Agrément+FEDHEN+CAPITAL.pdf" target="_blank">Agrément FedhEn Capital</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FedhEn Capital. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
